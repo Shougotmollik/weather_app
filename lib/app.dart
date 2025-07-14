@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/ui/home_screen.dart';
+import 'package:get/get.dart';
+import 'package:weather_app/route/route_names.dart';
+import 'package:weather_app/route/routes.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
       title: "Weather App",
-      home: HomeScreen(),
+      getPages: Routes.pages,
+      initialRoute: RouteNames.welcomeScreen,
     );
   }
 }
