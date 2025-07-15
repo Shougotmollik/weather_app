@@ -22,9 +22,13 @@ class WelcomeScreen extends StatelessWidget {
               _buildImageSection(),
               const SizedBox(height: 78),
               _buildTextSection(
-                  'Weather', FontWeight.w700, AppColor.whiteColor),
+                  text: 'Weather',
+                  fontWeight: FontWeight.w700,
+                  fontColor: AppColor.whiteColor),
               _buildTextSection(
-                  'Forecasts', FontWeight.w500, AppColor.yellowColor),
+                  text: 'Forecasts',
+                  fontWeight: FontWeight.w500,
+                  fontColor: AppColor.yellowColor),
               const SizedBox(height: 58),
               CustomElevatedButton(
                 onTap: () {
@@ -40,7 +44,9 @@ class WelcomeScreen extends StatelessWidget {
   }
 
   Widget _buildTextSection(
-      String text, FontWeight fontWeight, Color fontColor) {
+      {required String text,
+      required FontWeight fontWeight,
+      required Color fontColor}) {
     return Text(
       text,
       style: GoogleFonts.poppins(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:weather_app/controller_binder.dart';
 import 'package:weather_app/route/route_names.dart';
 import 'package:weather_app/route/routes.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: "Weather App",
       getPages: Routes.pages,
       initialRoute: RouteNames.welcomeScreen,
+      initialBinding: ControllerBinder(),
     );
   }
 }

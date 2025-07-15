@@ -18,9 +18,9 @@ class CustomLinearBackground extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColor.firstColor,
-            AppColor.secondColor,
-            AppColor.thirdColor,
+            AppColor.firstBgColor,
+            AppColor.secondBgColor,
+            AppColor.thirdBgColor,
           ],
         ),
       ),
